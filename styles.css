@@ -1,12 +1,6 @@
-body {
+body, h1, h2 {
+	background-color: #1B4079;
+	
 	font-family: 'Noto Serif KR';
 	text-align: center;
-}
-
-h1 {
-	font-size: 42px;
-}
-
-h2 {
-	font-size: 32px;
 }
