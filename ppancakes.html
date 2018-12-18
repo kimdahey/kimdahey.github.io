@@ -8,59 +8,61 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="title"><h1><a class="mainlink" href="index.html">claire kim</a></h1></div>
-        <div class="navbar">
-        <a class="nav" href="index.html">home</a> <!--goes to home page-->
-        <a class="nav" href="about.html">about</a> <!--goes to about page-->
-        <a class="nav" href="projects.html">projects</a> <!--goes to projects pages-->
+    <div class="container">
+        <div class="header">
+            <div class="title"><h1><a class="mainlink" href="index.html">claire kim</a></h1></div>
+            <div class="navbar">
+            <a class="nav" href="index.html">home</a> <!--goes to home page-->
+            <a class="nav" href="about.html">about</a> <!--goes to about page-->
+            <a class="nav" href="projects.html">projects</a> <!--goes to projects pages-->
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-    </div>
 
-    <h2>perfect pancakes</h2>
+        <h2>perfect pancakes</h2>
 
-    <div class="intro">
-        <h3> summary </h3>
-        <p>For my UI/UX course, we were tasked to create a live-filtering page for any content type of our choice, using React.</p>
-        <p>Perfect Pancakes was inspired by a randomly generated Github repository url, 'perfect-pancake'. I took that inspiration, made it plural, and decided to filter different international pancakes. You can view the final website for Perfect Pancakes <strong><a href="https://kimdahey.github.io/perfect-pancakes">here</a></strong>!</p>
+        <div class="intro">
+            <h3> summary </h3>
+            <p>For my UI/UX course, we were tasked to create a live-filtering page for any content type of our choice, using React.</p>
+            <p>Perfect Pancakes was inspired by a randomly generated Github repository url, 'perfect-pancake'. I took that inspiration, made it plural, and decided to filter different international pancakes. You can view the final website for Perfect Pancakes <strong><a href="https://kimdahey.github.io/perfect-pancakes">here</a></strong>!</p>
+            </div>
+        
+        <hr />
+
+        <div class="context">
+            <h3> content used (credit where due) </h3>
+            <img src="./photos/ppancakes/article.png" alt="screenshot of spoon university article">
+            <p>All pancake information was taken from this <a href="https://spoonuniversity.com/place/50-deliciously-diverse-pancakes-from-around-the-world">Spoon University article</a>, and I chose to find and source all the pictures used myself - all the picture sources can be found in the <a href="https://github.com/kimdahey/perfect-pancakes/blob/master/src/picture%20sources.txt">Github repository</a> for this project.</p>
         </div>
-    
-    <hr />
 
-    <div class="context">
-        <h3> content used (credit where due) </h3>
-        <img src="./photos/ppancakes/article.png" alt="screenshot of spoon university article">
-        <p>All pancake information was taken from this <a href="https://spoonuniversity.com/place/50-deliciously-diverse-pancakes-from-around-the-world">Spoon University article</a>, and I chose to find and source all the pictures used myself - all the picture sources can be found in the <a href="https://github.com/kimdahey/perfect-pancakes/blob/master/src/picture%20sources.txt">Github repository</a> for this project.</p>
-    </div>
+        <hr />
 
-    <hr />
+        <div class="components">
+            <h3> step 1: react components </h3>
+            <p>Since the purpose of this project was to learn React, I used React Components when figuring out how to organize my site. Each pancake 'card' is its own react component, as is the list that sorts and displays them.</p>
+        </div>
 
-    <div class="components">
-        <h3> step 1: react components </h3>
-        <p>Since the purpose of this project was to learn React, I used React Components when figuring out how to organize my site. Each pancake 'card' is its own react component, as is the list that sorts and displays them.</p>
-    </div>
+        <hr />
 
-    <hr />
+        <div class="final">
+            <h3> step two: final site </h3>
+            <img src="./photos/ppancakes/site.png" alt="screenshot of perfect pancakes">
+            <p>The final iteration of this site has a sortable list of pancakes. You have the option to filter by the continent of origin, or the 'taste' of the pancake (this still needs work, as some pancakes can be both sweet and savory). I also added an option for alphabetical sorting, as part of extending the functionality of the site.</p>
+        </div>
 
-    <div class="final">
-        <h3> step two: final site </h3>
-        <img src="./photos/ppancakes/site.png" alt="screenshot of perfect pancakes">
-        <p>The final iteration of this site has a sortable list of pancakes. You have the option to filter by the continent of origin, or the 'taste' of the pancake (this still needs work, as some pancakes can be both sweet and savory). I also added an option for alphabetical sorting, as part of extending the functionality of the site.</p>
-    </div>
+        <hr />
 
-    <hr />
-
-    <div class="conclusion">
-        <h3> reflection </h3>
-        <p>I appreciated this project, as I had been meaning to try and learn React for a couple years now. I also liked that I could goof off a bit and make a site that was guaranteed to make everyone who looked at it very, very hungry (including me...). I didn't quite get to improve the styling of the site as much as I would like, because I spent so much time on the actual functionality. In the future, I'd really like to make the site and the button styling a little more appealing and reminscent of pancakes.</p>
-    </div>
-    
-    <div id="footer">
-        made with &hearts; by claire! || 
-        <a href="mailto: claire_kim1@brown.edu">email</a>
-        <a href="https://www.github.com/kimdahey">github</a>
-        <a href="https://www.linkedin.com/kimdahey">linkedin</a>
+        <div class="conclusion">
+            <h3> reflection </h3>
+            <p>I appreciated this project, as I had been meaning to try and learn React for a couple years now. I also liked that I could goof off a bit and make a site that was guaranteed to make everyone who looked at it very, very hungry (including me...). I didn't quite get to improve the styling of the site as much as I would like, because I spent so much time on the actual functionality. In the future, I'd really like to make the site and the button styling a little more appealing and reminscent of pancakes.</p>
+        </div>
+        
+        <div id="footer">
+            made with &hearts; by claire! || 
+            <a href="mailto: claire_kim1@brown.edu">email</a>
+            <a href="https://www.github.com/kimdahey">github</a>
+            <a href="https://www.linkedin.com/kimdahey">linkedin</a>
+        </div>
     </div>
 </body>
 </html>

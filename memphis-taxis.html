@@ -8,74 +8,76 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="title"><h1><a class="mainlink" href="index.html">claire kim</a></h1></div>
-        <div class="navbar">
-        <a class="nav" href="index.html">home</a> <!--goes to home page-->
-        <a class="nav" href="about.html">about</a> <!--goes to about page-->
-        <a class="nav" href="projects.html">projects</a> <!--goes to projects pages-->
+    <div class="container">
+        <div class="header">
+            <div class="title"><h1><a class="mainlink" href="index.html">claire kim</a></h1></div>
+            <div class="navbar">
+            <a class="nav" href="index.html">home</a> <!--goes to home page-->
+            <a class="nav" href="about.html">about</a> <!--goes to about page-->
+            <a class="nav" href="projects.html">projects</a> <!--goes to projects pages-->
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-    </div>
 
-    <h2>memphis taxis</h2>
+        <h2>memphis taxis</h2>
 
-    <div class="intro">
-        <h3> summary </h3>
-        <p>For my UI/UX course, we had an assignment in which we used both quantitative and qualitative user tests for evaluating
-                interface designs. By using a fictional taxi site, Memphis Taxis, we were able to collect and analyze user behavior through quantitative data in A/B
-                Testing and qualitative data in User Testing. To collect data, I hosted my A/B version site up on Heroku, through <a href="https://shielded-inlet-65434.herokuapp.com/">this link</a> - refresh enough times, and you'll be able to see both versions!</p>
+        <div class="intro">
+            <h3> summary </h3>
+            <p>For my UI/UX course, we had an assignment in which we used both quantitative and qualitative user tests for evaluating
+                    interface designs. By using a fictional taxi site, Memphis Taxis, we were able to collect and analyze user behavior through quantitative data in A/B
+                    Testing and qualitative data in User Testing. To collect data, I hosted my A/B version site up on Heroku, through <a href="https://shielded-inlet-65434.herokuapp.com/">this link</a> - refresh enough times, and you'll be able to see both versions!</p>
+            </div>
+        
+        <hr />
+
+        <div class="ab testing">
+            <h3> a/b testing: the website </h3>
+            <img src="./photos/memphistaxis/memphistaxis.png" alt="memphis taxi website">
+            <p>I coded up two simple, but different versions of the same taxi site, with the same information listed on it - the picture above is one of the two versions. I wanted to see if there would be any change between the two versions in terms of click rate, time to click, dwell time, or return rate. I made null and alternative hypotheses for each one, and then set out to collect my data.</p>
+            <p>I gave the link to the <a href="https://shielded-inlet-65434.herokuapp.com/">Memphis Taxis site</a> (same as above) to friends and classmates, and asked them to browse through it normally, as if they were a customer looking for a taxi service. With their help, I was able to get enough data to start analyzing.</p>
         </div>
-    
-    <hr />
 
-    <div class="ab testing">
-        <h3> a/b testing: the website </h3>
-        <img src="./photos/memphistaxis/memphistaxis.png" alt="memphis taxi website">
-        <p>I coded up two simple, but different versions of the same taxi site, with the same information listed on it - the picture above is one of the two versions. I wanted to see if there would be any change between the two versions in terms of click rate, time to click, dwell time, or return rate. I made null and alternative hypotheses for each one, and then set out to collect my data.</p>
-        <p>I gave the link to the <a href="https://shielded-inlet-65434.herokuapp.com/">Memphis Taxis site</a> (same as above) to friends and classmates, and asked them to browse through it normally, as if they were a customer looking for a taxi service. With their help, I was able to get enough data to start analyzing.</p>
-    </div>
+        <hr />
 
-    <hr />
+        <div class="analyzing data">
+            <h3> a/b testing: analyzing the data </h3>
+            <img src="./photos/memphistaxis/confidence_interval.png" alt="confidence interval calculations">
+            <p>Upon receiving user data of people browsing the site, I set out to do some legwork in calculating, statistically, if one version was better than the other. I performed statistical tests on all four metrics - chi-squared tests on click rate and return rate, and then t-tests on time to click and dwell time. I also calculated a confidence interval on the average time to click (shown above), to see if the difference in versions was statistically significant - they were not. Overall, I found that there was no statistically significant difference between my version A and version B of the taxi website.</p>
+        </div>
 
-    <div class="analyzing data">
-        <h3> a/b testing: analyzing the data </h3>
-        <img src="./photos/memphistaxis/confidence_interval.png" alt="confidence interval calculations">
-        <p>Upon receiving user data of people browsing the site, I set out to do some legwork in calculating, statistically, if one version was better than the other. I performed statistical tests on all four metrics - chi-squared tests on click rate and return rate, and then t-tests on time to click and dwell time. I also calculated a confidence interval on the average time to click (shown above), to see if the difference in versions was statistically significant - they were not. Overall, I found that there was no statistically significant difference between my version A and version B of the taxi website.</p>
-    </div>
+        <hr />
 
-    <hr />
+        <div class="hifi">
+            <h3> user testing: hifi mockup </h3>
+            <img src="./photos/memphistaxis/protoio.png" alt="screenshot of proto.io mockup">
+            <p>For user testing, we were asked to redesign one version of our A/B site as a mobile app, and to host it online. I chose to use Proto.io, a site that allows users to create fully-interactive high-fidelity prototypes. The link to my mockup can be found <a href="https://pr.to/2IXNJF">here</a>.</p>
+            <p>I made a qualitative hypothesis, based on this mobile app version of the website, that users would find it easy to reserve the taxi of their choice. I also made some tasks and subtasks for the user to attempt, so that I could judge if the app was clear enough in its design for a user to comfortably navigate.</p>
+        </div>
 
-    <div class="hifi">
-        <h3> user testing: hifi mockup </h3>
-        <img src="./photos/memphistaxis/protoio.png" alt="screenshot of proto.io mockup">
-        <p>For user testing, we were asked to redesign one version of our A/B site as a mobile app, and to host it online. I chose to use Proto.io, a site that allows users to create fully-interactive high-fidelity prototypes. The link to my mockup can be found <a href="https://pr.to/2IXNJF">here</a>.</p>
-        <p>I made a qualitative hypothesis, based on this mobile app version of the website, that users would find it easy to reserve the taxi of their choice. I also made some tasks and subtasks for the user to attempt, so that I could judge if the app was clear enough in its design for a user to comfortably navigate.</p>
-    </div>
+        <hr />
 
-    <hr />
+        <div class="hifi2">
+            <h3> user testing: usertesting.com </h3>
+            <img src="./photos/memphistaxis/usertesting.png" alt="screenshot of usertesting.com site">
+            <p>For the actual user testing, we used an outside site called UserTesting.com.</p>
+            <p>Regarding my hypothesis that “Users will find it easy to reserve the taxi of their choice.” : it did indeed seem easy for users to reserve the taxi of their choice, but it was what happened afterwards that made the users not confident that they had chosen correctly, or that they had the freedom to cancel that reservation when they deemed it fair.</p>
+        </div>
 
-    <div class="hifi2">
-        <h3> user testing: usertesting.com </h3>
-        <img src="./photos/memphistaxis/usertesting.png" alt="screenshot of usertesting.com site">
-        <p>For the actual user testing, we used an outside site called UserTesting.com.</p>
-        <p>Regarding my hypothesis that “Users will find it easy to reserve the taxi of their choice.” : it did indeed seem easy for users to reserve the taxi of their choice, but it was what happened afterwards that made the users not confident that they had chosen correctly, or that they had the freedom to cancel that reservation when they deemed it fair.</p>
-        <p>My testing experience went well in that I got lots of valuable critical feedback on my app — some things that I had not even thought about, like the cancel reservation button. Knowing now how much critique and information I can receive with user testing, I would try to make my tasks more varied so that I can get more feedback on them.</p>
-    </div>
+        <hr />
 
-    <hr />
-
-    <div class="conclusion">
-        <h3> reflection </h3>
-        <p>My A/B testing yielded no significant differences in data, and thus did not really help in identifying improvements or weaknesses in either design. For my UserTesting data, however, it was incredibly helpful to hear feedback from users who were attempting to use the mobile app in a serious manner, in order to try and reserve taxis.</p>
-        <p>I really enjoyed the opportunity to try out different types of user tests in the process of improving a product. While math is not my strongest suit (thank goodness for calculators!), it was interesting to see how statistics could help in determining designs that were more effective over another. I also liked being able to branch out in using different tools to help me continue to iterate through my design work - this was my first time using Heroku, proto.io, and UserTesting.com, and it was really cool seeing the breadth of resources out there!</p>
-    </div>
-    
-    <div id="footer">
-        made with &hearts; by claire! || 
-        <a href="mailto: claire_kim1@brown.edu">email</a>
-        <a href="https://www.github.com/kimdahey">github</a>
-        <a href="https://www.linkedin.com/kimdahey">linkedin</a>
+        <div class="conclusion">
+            <h3> reflection </h3>
+            <p>My A/B testing yielded no significant differences in data, and thus did not really help in identifying improvements or weaknesses in either design. For my UserTesting data, however, it was incredibly helpful to hear feedback from users who were attempting to use the mobile app in a serious manner, in order to try and reserve taxis.</p>
+            <p>My testing experience went well in that I got lots of valuable critical feedback on my app — some things that I had not even thought about, like the cancel reservation button. Knowing now how much critique and information I can receive with user testing, I would try to make my tasks more varied so that I can get more feedback on them.</p>
+            <p>I really enjoyed the opportunity to try out different types of user tests in the process of improving a product. While math is not my strongest suit (thank goodness for calculators!), it was interesting to see how statistics could help in determining designs that were more effective over another. I also liked being able to branch out in using different tools to help me continue to iterate through my design work - this was my first time using Heroku, proto.io, and UserTesting.com, and it was really cool seeing the breadth of resources out there!</p>
+        </div>
+        
+        <div id="footer">
+            made with &hearts; by claire! || 
+            <a href="mailto: claire_kim1@brown.edu">email</a>
+            <a href="https://www.github.com/kimdahey">github</a>
+            <a href="https://www.linkedin.com/kimdahey">linkedin</a>
+        </div>
     </div>
 </body>
 </html>
