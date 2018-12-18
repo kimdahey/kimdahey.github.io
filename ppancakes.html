@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>claire kim: bagel gourmet redesign</title>
+  <title>claire kim: perfect pancakes</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="styles.js"></script>
@@ -18,56 +18,42 @@
         <div class="clear"></div>
     </div>
 
-    <h2>bagel gourmet redesign</h2>
+    <h2>perfect pancakes</h2>
 
     <div class="intro">
         <h3> summary </h3>
-        <p>For my UI/UX course, we were tasked to redesign any website of our choosing, and to make it responsive to screen resizing. I used HTML, CSS, a little bit of Javascript to redesign a website for one of my favorite breakfast spots to go to: Bagel Gourmet Cafe. You can view the final product <strong><a href="https://kimdahey.github.io/bagel-gourmet-redesign">here</a></strong>!</p>
+        <p>For my UI/UX course, we were tasked to create a live-filtering page for any content type of our choice, using React.</p>
+        <p>Perfect Pancakes was inspired by a randomly generated Github repository url, 'perfect-pancake'. I took that inspiration, made it plural, and decided to filter different international pancakes. You can view the final website for Perfect Pancakes <strong><a href="https://kimdahey.github.io/perfect-pancakes">here</a></strong>!</p>
         </div>
     
     <hr />
 
     <div class="context">
-        <h3> start: the original website </h3>
-        <img src="./photos/bagel-gourmet-redesign/bagelgourmetcafe.png" alt="original bgo website">
-        <p>This is the front page of the website for Bagel Gourmet Cafe. </p>
-        <p>The division of information between each page is logical, and the navigation bar is visible at all times, which is a plus for intuitive design. However, the navigation bar does not stay once you leave the front page, and there is a span of confusion before you realize that it’s moved to the sidebar. Sometimes there are subpages that don’t appear unless you’re on the parent page, which contributes to the poor ease of learning for this site. Even for an experienced user, the smallness and poor contrast of the navigation links make it hard for efficiency of use — once getting used to the site, memorability is still a little poor because of said issue.</p>
-        <p>The error frequency and severity tends to be high for this website, because there are many misleading visual cues, especially with text color. All in all, however, although the subjective satisfaction with the website function may be low, this redesigner’s subjective satisfaction with the website is grudgingly given to be in the positive. In the end, the color choices and overall design truly feels like it fits the Bagel Gourmet aesthetic — gradient background and all.</p>
+        <h3> start: the content </h3>
+        <img src="./photos/ppancakes/article.png" alt="screenshot of spoon university article">
+        <p>All pancake information was taken from this <a href="https://spoonuniversity.com/place/50-deliciously-diverse-pancakes-from-around-the-world">Spoon University article</a>, and I chose to find and source all the pictures used myself - all the picture sources can be found in the <a href="https://github.com/kimdahey/perfect-pancakes/blob/master/src/picture%20sources.txt">github repository</a> for this project.</p>
     </div>
 
     <hr />
 
-    <div class="wireframing">
-        <h3> first step: wireframing </h3>
-        <img src="./photos/bagel-gourmet-redesign/wireframing.png" alt="navigation bar wireframe">
-        <p>This first wireframe clearly illustrated the issue of the navigation bar - I wanted to have a clear and accessible way to navigate between pages, unlike the original website.</p>
-        <img src="./photos/bagel-gourmet-redesign/menu.png" alt="menu wireframe">
-        <p>While I did wireframes of four other pages from the original website (Home, Photos, Locations and Hours, and Contact Us), I ultimately chose to continue redesigning specifically with the Menu page.</p>
-    </div>
-
-    <hr />
-
-    <div class="hifi">
-        <h3> second step: hifi mockups </h3>
-        <img src="./photos/bagel-gourmet-redesign/hifi_desktop.png" alt="desktop hifi">
-        <p>This desktop hifi mockup, with annotations, gave me a roadmap for what I wanted to create in HTML/CSS. This redesign prioritized two things — preserving the original color palette in a more palatable form, and general page layout in making navigation of the page easier. I decided to really solidify the permanence of the logo and the navigation bar for each page by encapsulating them in a header, noted by the darker color gradient that comes from the original site’s background.</p>
-        <img class="heighter" src="./photos/bagel-gourmet-redesign/hifi_phone.png" alt="phone hifi">
-        <p>As we were doing a responsive redesign, I also made a hifi mockup for what I wanted the site to look like with different screensizes - for example, if I was viewing my site on my phone.</p>
+    <div class="components">
+        <h3> step 1: react components </h3>
+        <p>Since the purpose of this project was to learn React, I used React Components when figuring out how to organize my site. Each pancake 'card' is its own react component, as is the list that sorts and displays them.</p>
     </div>
 
     <hr />
 
     <div class="final">
-        <h3> final step: coding </h3>
-        <img src="./photos/bagel-gourmet-redesign/final.png" alt="final result">
-        <p>Going from hifi mockup to actual HTML/CSS also allowed me to make more final decisions on some of the design choices that I had been deliberating with. I limited my choice of fonts to just two, and picked ones that mimicked the feel of the original site; Lobster provided a close feel for the cursive logo, while Merriweather Sans paired well with the logo, was clear and legible, and provided easy readability for the rest of the text on the page.</p>
+        <h3> step two: final site </h3>
+        <img src="./photos/ppancakes/site.png" alt="screenshot of perfect pancakes">
+        <p>The final iteration of this site has a sortable list of pancakes. You have the option to filter by the continent of origin, or the 'taste' of the pancake (this still needs work, as some pancakes can be both sweet and savory). I also added an option for alphabetical sorting, as part of extending the functionality of the site.</p>
     </div>
 
     <hr />
 
     <div class="conclusion">
         <h3> reflection </h3>
-        <p>This was the first time that I had coded a site from scratch, and I really enjoyed learning how to use wireframing and hifi mockups to help clarify my final vision for the Bagel Gourmet redesign. I also appreciated the chance to learn more CSS, especially flexboxes and the @media tag. It was especially nice to be able to create this website based on something that I was passionate about, and I had a lot of fun experimenting with different looks and layouts, to try and best preserve some of the best parts of the site. This was also a good opportunity to learn how to use Github Pages, so that I could access <strong><a href="https://kimdahey.github.io/bagel-gourmet-redesign">this site</a></strong> from anywhere I wanted to!</p>
+        <p>I appreciated this project, as I had been meaning to try and learn React for a couple years now. I also liked that I could goof off a bit and make a site that was guaranteed to make everyone who looked at it very, very hungry (including me...). I didn't quite get to improve the styling of the site as much as I would like, because I spent so much time on the actual functionality. In the future, I'd really like to make the site and the button styling a little more appealing and reminscent of pancakes.</p>
     </div>
     
     <div id="footer">
