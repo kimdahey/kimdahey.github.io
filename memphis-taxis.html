@@ -22,45 +22,45 @@
 
     <div class="intro">
         <h3> summary </h3>
-        <p>For my UI/UX course, we were tasked to redesign any website of our choosing, and to make it responsive to screen resizing. I used HTML, CSS, a little bit of Javascript to redesign a website for one of my favorite breakfast spots to go to: Bagel Gourmet Cafe. You can view the final product <strong><a href="https://kimdahey.github.io/bagel-gourmet-redesign">here</a></strong>!</p>
+        <p>For my UI/UX course, we had an assignment in which we used both quantitative and qualitative user tests for evaluating
+                interface designs. By using a fictional taxi site, Memphis Taxis, we were able to collect and analyze user behavior through quantitative data in A/B
+                Testing and qualitative data in User Testing. To collect data, I hosted my A/B version site up on Heroku, through <a href="https://shielded-inlet-65434.herokuapp.com/">this link</a> - refresh enough times, and you'll be able to see both versions!</p>
         </div>
     
     <hr />
 
-    <div class="context">
-        <h3> start: the original website </h3>
-        <img src="./photos/bagel-gourmet-redesign/bagelgourmetcafe.png" alt="original bgo website">
-        <p>This is the front page of the website for Bagel Gourmet Cafe. </p>
-        <p>The division of information between each page is logical, and the navigation bar is visible at all times, which is a plus for intuitive design. However, the navigation bar does not stay once you leave the front page, and there is a span of confusion before you realize that it’s moved to the sidebar. Sometimes there are subpages that don’t appear unless you’re on the parent page, which contributes to the poor ease of learning for this site. Even for an experienced user, the smallness and poor contrast of the navigation links make it hard for efficiency of use — once getting used to the site, memorability is still a little poor because of said issue.</p>
-        <p>The error frequency and severity tends to be high for this website, because there are many misleading visual cues, especially with text color. All in all, however, although the subjective satisfaction with the website function may be low, this redesigner’s subjective satisfaction with the website is grudgingly given to be in the positive. In the end, the color choices and overall design truly feels like it fits the Bagel Gourmet aesthetic — gradient background and all.</p>
+    <div class="ab testing">
+        <h3> a/b testing: the website </h3>
+        <img src="./photos/memphistaxis/memphistaxis.png" alt="memphis taxi website">
+        <p>I coded up two simple, but different versions of the same taxi site, with the same information listed on it - the picture above is one of the two versions. I wanted to see if there would be any change between the two versions in terms of click rate, time to click, dwell time, or return rate. I made null and alternative hypotheses for each one, and then set out to collect my data.</p>
+        <p>I gave the link to the <a href="https://shielded-inlet-65434.herokuapp.com/">Memphis Taxis site</a> (same as above) to friends and classmates, and asked them to browse through it normally, as if they were a customer looking for a taxi service. With their help, I was able to get enough data to start analyzing.</p>
     </div>
 
     <hr />
 
-    <div class="wireframing">
-        <h3> first step: wireframing </h3>
-        <img src="./photos/bagel-gourmet-redesign/wireframing.png" alt="navigation bar wireframe">
-        <p>This first wireframe clearly illustrated the issue of the navigation bar - I wanted to have a clear and accessible way to navigate between pages, unlike the original website.</p>
-        <img src="./photos/bagel-gourmet-redesign/menu.png" alt="menu wireframe">
-        <p>While I did wireframes of four other pages from the original website (Home, Photos, Locations and Hours, and Contact Us), I ultimately chose to continue redesigning specifically with the Menu page.</p>
+    <div class="analyzing data">
+        <h3> a/b testing: analyzing the data </h3>
+        <img src="./photos/memphistaxis/confidence_interval.png" alt="confidence interval calculations">
+        <p>Upon receiving user data of people browsing the site, I set out to do some legwork in calculating, statistically, if one version was better than the other. I performed statistical tests on all four metrics - chi-squared tests on click rate and return rate, and then t-tests on time to click and dwell time. I also calculated a confidence interval on the average time to click (shown above), to see if the difference in versions was statistically significant - they were not.</p>
     </div>
 
     <hr />
 
     <div class="hifi">
-        <h3> second step: hifi mockups </h3>
-        <img src="./photos/bagel-gourmet-redesign/hifi_desktop.png" alt="desktop hifi">
-        <p>This desktop hifi mockup, with annotations, gave me a roadmap for what I wanted to create in HTML/CSS. This redesign prioritized two things — preserving the original color palette in a more palatable form, and general page layout in making navigation of the page easier. I decided to really solidify the permanence of the logo and the navigation bar for each page by encapsulating them in a header, noted by the darker color gradient that comes from the original site’s background.</p>
-        <img class="heighter" src="./photos/bagel-gourmet-redesign/hifi_phone.png" alt="phone hifi">
-        <p>As we were doing a responsive redesign, I also made a hifi mockup for what I wanted the site to look like with different screensizes - for example, if I was viewing my site on my phone.</p>
+        <h3> user testing: hifi mockup </h3>
+        <img src="./photos/memphistaxis/protoio.png" alt="screenshot of proto.io mockup">
+        <p>For user testing, we were asked to redesign one version of our A/B site as a mobile app, and to host it online. I chose to use Proto.io, a site that allows users to create fully-interactive high-fidelity prototypes. The link to my mockup can be found <a href="https://pr.to/2IXNJF">here</a>.</p>
+        <p>I made a qualitative hypothesis, based on this mobile app version of the website, that users would find it easy to reserve the taxi of their choice. I also made some tasks and subtasks for the user to attempt, so that I could judge if the app was clear enough in its design for a user to comfortably navigate.</p>
     </div>
 
     <hr />
 
-    <div class="final">
-        <h3> final step: coding </h3>
-        <img src="./photos/bagel-gourmet-redesign/final.png" alt="final result">
-        <p>Going from hifi mockup to actual HTML/CSS also allowed me to make more final decisions on some of the design choices that I had been deliberating with. I limited my choice of fonts to just two, and picked ones that mimicked the feel of the original site; Lobster provided a close feel for the cursive logo, while Merriweather Sans paired well with the logo, was clear and legible, and provided easy readability for the rest of the text on the page.</p>
+    <div class="hifi2">
+        <h3> user testing: usertesting.com </h3>
+        <img src="./photos/memphistaxis/usertesting.png" alt="screenshot of usertesting.com site">
+        <p>For the actual user testing, we used an outside site called UserTesting.com.</p>
+        <p>Regarding my hypothesis that “Users will find it easy to reserve the taxi of their choice.” : it did indeed seem easy for users to reserve the taxi of their choice, but it was what happened afterwards that made the users not confident that they had chosen correctly, or that they had the freedom to cancel that reservation when they deemed it fair.</p>
+        <p>My testing experience went well in that I got lots of valuable critical feedback on my app — some things that I had not even thought about, like the cancel reservation button. Knowing now how much critique and information I can receive with user testing, I would try to make my tasks more varied so that I can get more feedback on them.</p>
     </div>
 
     <hr />
