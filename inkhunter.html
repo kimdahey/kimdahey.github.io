@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
 <head>
-  <title>claire kim: bagel gourmet redesign</title>
+  <title>claire kim: inkhunter</title>
   <link href="https://fonts.googleapis.com/css?family=Noto+Serif+KR" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script src="styles.js"></script>
@@ -18,56 +18,55 @@
         <div class="clear"></div>
     </div>
 
-    <h2>bagel gourmet redesign</h2>
+    <h2>inkhunter</h2>
 
     <div class="intro">
         <h3> summary </h3>
-        <p>For my UI/UX course, we were tasked to redesign any website of our choosing, and to make it responsive to screen resizing. I used HTML, CSS, a little bit of Javascript to redesign a website for one of my favorite breakfast spots to go to: Bagel Gourmet Cafe. You can view the final product <strong><a href="https://kimdahey.github.io/bagel-gourmet-redesign">here</a></strong>!</p>
+        <p>For my UI/UX course, I partnered with three other students to design an interface for an emerging startup - based only on their mission statement, and ignoring any pre-existing designs. The startup that we chose was <a href="http://inkhunter.tattoo/">InkHunter</a>, a very cool AR-based startup that allows users to “try on” a tattoo to see how it would look on their skin. We chose to make a mobile app, in order to make use of smartphones’ augmented reality capabilities.</p>
+        <p>This also served as an opportunity for us to all try intense iterative design, from rough sketches of ideas all the way to a hifi app mockup. We were also lucky enough to be given the chance to use an eye tracker for this project, and to generate more interesting data worth analyzing.</p>
         </div>
     
     <hr />
 
-    <div class="context">
-        <h3> start: the original website </h3>
-        <img src="./photos/bagel-gourmet-redesign/bagelgourmetcafe.png" alt="original bgo website">
-        <p>This is the front page of the website for Bagel Gourmet Cafe. </p>
-        <p>The division of information between each page is logical, and the navigation bar is visible at all times, which is a plus for intuitive design. However, the navigation bar does not stay once you leave the front page, and there is a span of confusion before you realize that it’s moved to the sidebar. Sometimes there are subpages that don’t appear unless you’re on the parent page, which contributes to the poor ease of learning for this site. Even for an experienced user, the smallness and poor contrast of the navigation links make it hard for efficiency of use — once getting used to the site, memorability is still a little poor because of said issue.</p>
-        <p>The error frequency and severity tends to be high for this website, because there are many misleading visual cues, especially with text color. All in all, however, although the subjective satisfaction with the website function may be low, this redesigner’s subjective satisfaction with the website is grudgingly given to be in the positive. In the end, the color choices and overall design truly feels like it fits the Bagel Gourmet aesthetic — gradient background and all.</p>
+    <div class="sketches">
+        <h3> start: sketches </h3>
+        <img src="./photos/inkhunter/sketch.png" alt="rough sketch of mobile app layout">
+        <p>The sketch that I created was modeled around an artist vs. customer dichotomy. In this model, artists would curate galleries of their tattoo designs and use Inkhunter to advertise to potential customers. Customers would be able to browse for artists based near them, try out tattoos using the app’s A/R camera features, and potentially travel to the artist whose design they like best and get a real tattoo. </p>
     </div>
 
     <hr />
 
-    <div class="wireframing">
-        <h3> first step: wireframing </h3>
-        <img src="./photos/bagel-gourmet-redesign/wireframing.png" alt="navigation bar wireframe">
-        <p>This first wireframe clearly illustrated the issue of the navigation bar - I wanted to have a clear and accessible way to navigate between pages, unlike the original website.</p>
-        <img src="./photos/bagel-gourmet-redesign/menu.png" alt="menu wireframe">
-        <p>While I did wireframes of four other pages from the original website (Home, Photos, Locations and Hours, and Contact Us), I ultimately chose to continue redesigning specifically with the Menu page.</p>
+    <div class="first hifi">
+        <h3> first step: hifi mockup & critique session </h3>
+        <img src="./photos/inkhunter/hifi1.png" alt="first hifi mockup">
+        <p>In the first iteration of our prototype, we used Figma to collaboratively create a hifi mockup amongst the four of us. In this mockup, we combined elements from each of the initial sketches that our group members did. This initial mockup is viewable <a href="https://www.figma.com/proto/aJbJktEq8RvmG3XMSQSK1Cgr/Iterative-Design%3A-InkHunter?node-id=0%3A1&scaling=scale-down">here</a>. Our primary goals were to 1) provide a space for verified tattoo artists to upload and maintain a personal gallery of work, and 2) allow users to be able to 'try on' designs from tattoo artists, as well as having the freedom to try on their own designs. Essentially, we wanted to cater to two different user bases in this app.</p>
+        <p>We took this mockup to a critique session, in which groups presented their initial mockup, and received critiques from other groups in the course. Most liked the app’s aesthetic, and appreciated the relatively simple layout. However, many said that they would not have understood the app’s purpose without our verbal explanations. They were confused about the difference between “personal” and “public” profiles, the landing page, and the meaning of different buttons. Additionally, while they appreciated the app’s social capabilities, they said that they were by far the least important element.</p>
     </div>
 
     <hr />
 
-    <div class="hifi">
-        <h3> second step: hifi mockups </h3>
-        <img src="./photos/bagel-gourmet-redesign/hifi_desktop.png" alt="desktop hifi">
-        <p>This desktop hifi mockup, with annotations, gave me a roadmap for what I wanted to create in HTML/CSS. This redesign prioritized two things — preserving the original color palette in a more palatable form, and general page layout in making navigation of the page easier. I decided to really solidify the permanence of the logo and the navigation bar for each page by encapsulating them in a header, noted by the darker color gradient that comes from the original site’s background.</p>
-        <img class="heighter" src="./photos/bagel-gourmet-redesign/hifi_phone.png" alt="phone hifi">
-        <p>As we were doing a responsive redesign, I also made a hifi mockup for what I wanted the site to look like with different screensizes - for example, if I was viewing my site on my phone.</p>
+    <div class="second hifi">
+        <h3> second step: hifi mockup (improved) </h3>
+        <img src="./photos/inkhunter/hifi2.png" alt="second hifi mockup">
+        <p>In doing the critique session, we were able to take away several important points in iterating on our design to make it more user-friendly. Our app design was trying to fill too many roles at once, and a result, the interface was clunky and confusing.</p>
+        <p>In the second iteration, viewable <a href="https://www.figma.com/proto/bHywNndKnT76kDsMpep7cu/Iterative-Design%3A-InkHunter-(Version-2.0)?node-id=0%3A1&scaling=scale-down">here</a>, we pared down the app to its most important feature: A/R tattoos. In practice, that meant eliminating the social elements (i.e. the profile pages and the dashboard), and making it essentially a glorified A/R camera. We also added onboarding, so that the user could understand how to use the app upon first entering.</p>
     </div>
 
     <hr />
 
-    <div class="final">
-        <h3> final step: coding </h3>
-        <img src="./photos/bagel-gourmet-redesign/final.png" alt="final result">
-        <p>Going from hifi mockup to actual HTML/CSS also allowed me to make more final decisions on some of the design choices that I had been deliberating with. I limited my choice of fonts to just two, and picked ones that mimicked the feel of the original site; Lobster provided a close feel for the cursive logo, while Merriweather Sans paired well with the logo, was clear and legible, and provided easy readability for the rest of the text on the page.</p>
+    <div class="eyetracking">
+        <h3> third step: eyetracking </h3>
+        <img src="./photos/inkhunter/heatmap.png" alt="heatmap result">
+        <p>With this final iteration of our hifi prototype done, we used an eye tracker to analyze user engagement with our interface. We constructed a task for a user to perform with our prototype, and hypothesized about the resulting time per screen and eye movement. Our task was for the user to pick the black and white flower design, take a picture with it, and save the ensuing picture to their camera roll.</p>
+        <p>Our two hypotheses were as follows. [1] On the home page, the user’s eye will be drawn to the bottom of the screen, because we have a brightly colored button that will attract the user’s attention on a mostly monotone page. [2] In order to take a picture with the specified tattoo design, the user will start on the homepage, follow a series of onboarding screens to learn how to use the app, select the design from their pictures, take a picture, edit the picture, and then save the final product to their camera roll.</p>
+        <p>The data from this eye tracking session helped to support both of our hypotheses. [1] On the first page, our tester’s gaze focused mainly on the bottom left of the screen - we also observed that the calibration of the eye-tracker was slightly off (perhaps due to the contacts that our tester was wearing), an issue that persisted despite multiple attempts to recalibrate. [2] The eye tracking data also supported our hypothesis for the order in which these pages are navigated - the user was able to successfully navigate through to our objective.</p>
     </div>
 
     <hr />
 
     <div class="conclusion">
         <h3> reflection </h3>
-        <p>This was the first time that I had coded a site from scratch, and I really enjoyed learning how to use wireframing and hifi mockups to help clarify my final vision for the Bagel Gourmet redesign. I also appreciated the chance to learn more CSS, especially flexboxes and the @media tag. It was especially nice to be able to create this website based on something that I was passionate about, and I had a lot of fun experimenting with different looks and layouts, to try and best preserve some of the best parts of the site. This was also a good opportunity to learn how to use Github Pages, so that I could access <strong><a href="https://kimdahey.github.io/bagel-gourmet-redesign">this site</a></strong> from anywhere I wanted to!</p>
+        <p>This was a really cool project, not only because of the eyetracking (!!!) but also because of the opportunity to collaboratively come up with a design. I enjoyed the opportunity to see other people's initial sketches for an object, and to hear feedback from other people on how to improve our work. It was super awesome to be able to work with others to iterate upon on a single shared design, and to have the experience of having to justify one's reasonings behind designing something the way it is.</p>
     </div>
     
     <div id="footer">
