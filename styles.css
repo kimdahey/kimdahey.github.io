@@ -1,6 +1,6 @@
 html, body {
 	background-color: #ccfff5;
-	color: #132639;
+	color: #005580;
 	font-family: 'Noto Serif KR';
 	text-align: center;
 	margin: 0;
@@ -19,15 +19,27 @@ li {
 	list-style-type: none;
 }
 
-a.nav:hover, a.nav:active {
-	color: #d9e6f2;
-}
-
 a {
 	color: #005580;
-	padding: 0px 10px;
 	text-decoration: none;
 }
+
+a:hover, a:active {
+	color: #33cccc;
+}
+
+a.nav {
+	padding: 0px 10px;
+}
+
+a.nav:hover, a.nav:active {
+	color: #ccfff5;
+}
+
+a.mainlink:hover, a.mainlink:active {
+	color: #005580;
+}
+
 
 .header {
     position: center;
